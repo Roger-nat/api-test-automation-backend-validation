@@ -1,0 +1,44 @@
+{
+  "users": {
+    "primary": {
+      "name": "Aarav Mehta",
+      "email": "aarav@example.com",
+      "password": "StrongPass123"
+    },
+    "secondary": {
+      "name": "Riya Sharma",
+      "email": "riya@example.com",
+      "password": "StrongPass456"
+    }
+  },
+  "invalid_emails": [
+    "not-an-email",
+    "missing-domain@",
+    "@missing-user.com"
+  ],
+  "invalid_projects": [
+    {
+      "description": "missing required name"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    }
+  ],
+  "invalid_testcases": [
+    {
+      "description": "description only"
+    },
+    {
+      "title": "x",
+      "description": "too short title"
+    },
+    {
+      "title": "Valid title",
+      "description": "Valid description",
+      "priority": "urgent"
+    }
+  ]
+}
